@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Örneği</title>
+</head>
+<body>
+    <h1>fieldset ve select kullanımı</h1>
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <label for="ad">İsim</label><br>
+            <input type="text" name="ad" id="ad" placeholder="Ad"><br><br>
+
+            <label for="soyad">Soyad</label><br>
+            <input type="text" name="soyad" id="soyad" placeholder="Soyad"><br><br>
+
+            <label for="cinsiyet">Cinsiyet</label><br>
+           
+            <input type="radio" name="cinsiyet" id="kiz" value="kiz">
+            <label for="kiz">kız</label> 
+
+            <input type="radio" name="cinsiyet" id="erkek" value="erkek">
+            <label for="cinsiyet">erkek</label> <br><br>
+
+            <label for="yer">Yaşadığınız Yer</label><br>
+            <input type="text" name="yer" id="yer"><br><br>
+
+            <label for="dogum_tarih">Doğum Tarihi</label><br>
+            <input type="date" name="dogum_tarih" id="dogum_tarih" value="2010.02.05">
+        </fieldset>
+        <fieldset>
+            <legend>Eğitim Bİlgileri</legend>
+            <label for="okul">Okul:</label><br>
+            <input type="text" name="okul" id="okul"><br><br>
+
+            <label for="sinif">Sınıf:</label><br>
+            <input type="text" name="sinif" id="sinif"><br><br>
+
+           <label for="bolum">Bölümünüz</label><br>
+           <select name="bolum" id="bolum" >
+            <option value="1">Bilişim Tenoloji</option>
+            <option value="2">Çocuk Gelişim</option>
+            <option value="3">Moda Tasarım</option>
+            <option value="4">Grafik Tasarım</option>
+           </select> <br><br>
+        
+        </fieldset>
+        <fieldset>
+            <legend>EK Bilgiler</legend>
+            <textarea name="not" id="not" cols="50" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempora impedit sit tenetur minus, optio, soluta at eveniet excepturi consectetur, doloribus eaque? Qui numquam voluptatem obcaecati voluptas, est sapiente dolorum.</textarea>
+            <br>
+            <input type="checkbox" name="bilgi" id="bilgi" >
+            <label for="bilgi">Bilgileri kabul et</label><br>
+
+            <input type="checkbox" name="cerez" id="cerez" >
+            <label for="cerez">Çerezleri  kabul et</label>
+            <br>
+            <button type="submit">Göder</button>
+        </fieldset>
+        <button type="reset">Sıfırla</button>
+    </form>
+</body>
+</html>
